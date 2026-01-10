@@ -1,0 +1,27 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+cmd = "python scenarios/debate/debate_judge.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "red_spymaster"
+endpoint = "http://127.0.0.1:9019"
+cmd = "python scenarios/debate/debater.py --host 127.0.0.1 --port 9019"
+
+[[participants]]
+role = "red_field_agent"
+endpoint = "http://127.0.0.1:9018"
+cmd = "python scenarios/debate/debater.py --host 127.0.0.1 --port 9018"
+
+[[participants]]
+role = "blue_spymaster"
+endpoint = "http://127.0.0.1:9017"
+cmd = "python scenarios/debate/debater.py --host 127.0.0.1 --port 9017"
+
+[[participants]]
+role = "blue_field_agent"
+endpoint = "http://127.0.0.1:9016"
+cmd = "python scenarios/debate/debater.py --host 127.0.0.1 --port 9016"
+
+[config]
+topic = "Should artificial intelligence be regulated?"
+num_rounds = 3
