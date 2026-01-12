@@ -24,23 +24,16 @@ def main():
     # See: https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/
     
     skill = AgentSkill(
-        id="codenames_evaluation",
-        name="Codenames Benchmark Evaluation",
-        description="Evaluates agents on codenames game",
-        tags=["benchmark", "evaluation", "codenames"],
-        examples=[
-            '''{"participants": {
-            "red_spymaster": "http://localhost:9019",
-            "red_field_agent": "http://localhost:9018",
-            "blue_spymaster": "http://localhost:9017",
-            "blue_field_agent": "http://localhost:9016"
-            '''
-        ],
+        id="",
+        name="",
+        description="",
+        tags=[],
+        examples=[]
     )
 
     agent_card = AgentCard(
-        name="Green Agent Codenames",
-        description="Green Agent Codenames",
+        name="",
+        description="",
         url=args.card_url or f"http://{args.host}:{args.port}/",
         version='1.0.0',
         default_input_modes=['text'],

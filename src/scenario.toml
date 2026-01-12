@@ -1,0 +1,23 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+cmd = "python /Users/marvin_meng/Desktop/agentbeats-codenames/src/green/server.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "red_spymaster"
+endpoint = "http://127.0.0.1:9019"
+cmd = "python /Users/marvin_meng/Desktop/agentbeats-codenames/src/white_spymaster/server.py --host 127.0.0.1 --port 9019 --team red"
+
+[[participants]]
+role = "red_field_agent"
+endpoint = "http://127.0.0.1:9018"
+cmd = "python /Users/marvin_meng/Desktop/agentbeats-codenames/src/white_field_agent/server.py --host 127.0.0.1 --port 9018 --team red"
+
+[[participants]]
+role = "blue_spymaster"
+endpoint = "http://127.0.0.1:9017"
+cmd = "python /Users/marvin_meng/Desktop/agentbeats-codenames/src/white_spymaster/server.py --host 127.0.0.1 --port 9017 --team blue"
+
+[[participants]]
+role = "blue_field_agent"
+endpoint = "http://127.0.0.1:9016"
+cmd = "python /Users/marvin_meng/Desktop/agentbeats-codenames/src/white_field_agent/server.py --host 127.0.0.1 --port 9016 --team blue"
